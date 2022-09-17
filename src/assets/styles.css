@@ -1,0 +1,375 @@
+.App {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.inline-main-container {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.inline-setcion {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 320px;
+  height: 385px;
+  border-bottom: 5px solid #380474;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+  background: #380474;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+}
+
+.navigationBar {
+  height: 35px;
+  color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.days-inline {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  text-align: center;
+  color: rgba(53, 53, 53, 0.562);
+}
+
+.date-view {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-inline-calendar {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.date-inline-calendar:hover {
+  color: black;
+  background: #ccccff;
+  border-radius: 50px;
+}
+
+.date-inline-calendar.inline-today {
+  background: #380474;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+}
+.date-inline-calendar.inline-disabled {
+  color: rgba(53, 53, 53, 0.479);
+}
+.date-inline-calendar.inline-selected {
+  background: #ccccff;
+  border-radius: 50px;
+  color: black;
+}
+
+.day-cell .date-inline-calendar.selected {
+  background: rgb(12, 12, 12);
+  border-radius: 3px;
+  color: white;
+}
+
+.years_card {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: white;
+  width: 320px;
+  height: 290px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.year-selector {
+  display: flex;
+  align-items: center;
+}
+.year-selector:hover {
+  cursor: pointer;
+  color: #380474;
+}
+.years-selector-icon {
+  font-size: 12px;
+  margin-left: 4px;
+  height: 12px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0px 10px 0px 10px;
+}
+
+.calendar-nav-today {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBtnPrev {
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  width: 14px;
+  margin-right: 5px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.637);
+  background: transparent;
+}
+
+.today-inline {
+  font-size: 13px;
+  border: none;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.today-inline:hover {
+  cursor: pointer;
+  color: #380474;
+}
+
+.navBtnNext {
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  width: 14px;
+  margin-left: 5px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.637);
+  background: transparent;
+}
+
+.navBtnPrev:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid black;
+  background: #380474;
+}
+
+.navBtnNext:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid black;
+  background: #380474;
+}
+
+.progressText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #000000a4;
+  margin-top: 40px;
+}
+.date-input-container {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 320px;
+  height: 120px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.date-input-section {
+  color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  background: white;
+}
+.input-title {
+  margin-top: 6px;
+  font-size: 14px;
+}
+.input-section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.date-input-month {
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  text-align: center;
+  width: 50px;
+  height: 25px;
+}
+.date-input-year {
+  width: 50px;
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+}
+.date-input-month:focus {
+  outline: none;
+}
+.date-input-year:focus {
+  outline: none;
+}
+.date-input-month::placeholder {
+  font-size: 13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.301);
+}
+.date-input-year::placeholder {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.301);
+}
+.goBtnBlocked {
+  cursor: not-allowed;
+  background: #380474;
+  border: #380474;
+  border-radius: 3px;
+  margin-left: 10px;
+  width: 50px;
+  height: 25px;
+  color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.3;
+}
+.goBtn {
+  background: #380474;
+  border: #380474;
+  border-radius: 3px;
+  margin-left: 10px;
+  width: 50px;
+  height: 25px;
+  color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.goBtn:hover {
+  cursor: pointer;
+  color: white;
+  background: #380474b0;
+  border: 1px solid #380474b0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.year-listing {
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  height: 230px;
+  padding: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.year-item {
+  padding: 3px;
+}
+.title-year-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+.year-item:hover {
+  color: black;
+  background: #ccccff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #380474;
+}
+.year-item.currentYear {
+  background: #380474;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+}
+.inline-back {
+  display: flex;
+  align-items: center;
+}
+.inline-back:hover {
+  cursor: pointer;
+  color: #380474;
+}
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 13px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  text-align: center;
+  position: absolute;
+}
+
+.selectedDetails {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+}
+.selected-text {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
