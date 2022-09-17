@@ -59,6 +59,7 @@ const Calendar: React.FC<inlineCalender> = (props) => {
     setDayInput("");
     setCurrentMonth(moment());
     const currentDayStr = moment().format("ddd Do MMM YYYY");
+    setSelectedDate(moment(currentDayStr));
     setDateDetails(currentDayStr);
   };
 
